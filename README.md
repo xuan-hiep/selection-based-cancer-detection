@@ -16,6 +16,7 @@ In this work, we present a framework that combines deep learning with feature se
 - CNNs: extract informative features from medical images.
 - Raw features: often high-dimensional and redundant.
 - Feature selection improves accuracy and efficiency:
+
     - R-Relief: Identifies discriminative features.
     - PCC: Removes redundant/correlated features.
     - PCA: Fuses selected features into a compact vector.
@@ -28,6 +29,7 @@ In this work, we present a framework that combines deep learning with feature se
 - Pretrained CNN model on CIFAR-100 (60,000 images, 100 classes).
 - Fine-tuned on histopathology dataset.
 - Training details:
+
     - Epochs: 60
     - Batch size: 128
     - Initial learning rate: 0.01
@@ -35,15 +37,15 @@ In this work, we present a framework that combines deep learning with feature se
 
 ### Step 2: Feature Extraction
 - Extract deep feature vectors (DF) from the last fully connected layers.
-- Each histopathology image → vector of dimension d.
+- Each histopathology image to get feature vectors.
 
 ### Step 3: Feature Selection
 - **Parallel selection strategy**:
 
     - Apply R-Relief to rank features by discriminative power.
-    - Apply PCC to remove redundant/irrelevant features.
+    - Apply PCC to remove redundant / irrelevant features.
 
-- **Fusion step**: Apply PCA on outputs of R-Relief + PCC → final compact feature vector (FV).
+- **Fusion step**: Apply PCA on outputs of R-Relief with PCC to get final compact feature vector (FV).
 
 ### Step 4: Classification
 - Multiple classifiers trained on selected features:
@@ -98,9 +100,12 @@ pip install -r requirements.txt
 
 If you use this repository, please cite:
 
+```bibtex
 @article{selectioncancer2022,
   title={A Framework of Deep Learning and Selection-Based Breast Cancer Detection from Histopathology Images},
   author={Muhammad Junaid Umer, Muhammad Sharif, Majed Alhaisoni, Usman Tariq, Ye Jin Kim and Byoungchol Chang},
   journal={Computer Systems Science & Engineering},
-  year={2022}
+  year={2022},
+  publisher = {Computer Systems Science & Engineering}
 }
+```
