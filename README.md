@@ -28,6 +28,7 @@ In this work, we present a framework that combines deep learning with feature se
 - Pretrained CNN model on CIFAR-100 (60,000 images, 100 classes).
 - Fine-tuned on histopathology dataset.
 - Training details:
+    
     - Epochs: 60
     - Batch size: 128
     - Initial learning rate: 0.01
@@ -61,7 +62,6 @@ In this work, we present a framework that combines deep learning with feature se
 ---
 
 ## Dataset
-
 - Dataset used: Histopathology IDC dataset (breast cancer tissue images).
 - Classes: IDC positive vs IDC negative.
 - Preprocessing:
