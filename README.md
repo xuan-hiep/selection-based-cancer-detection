@@ -32,7 +32,7 @@ In this work, we present a framework that combines deep learning with feature se
     - Epochs: 60
     - Batch size: 128
     - Initial learning rate: 0.01
-    - Optimizer: SGD with momentum
+    - Optimizer: "sgdm"
 
 ### Step 2: Feature Extraction
 - Extract deep feature vectors (DF) from the last fully connected layers.
