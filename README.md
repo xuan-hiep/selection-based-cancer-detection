@@ -93,14 +93,16 @@ pip install -r requirements.txt
 ## Results
 
 ## Limitations & Future Work
-Classification relied only on deep features, without combining them with classical hand-crafted features.
-No data augmentation methods were applied.
-No preprocessing steps were introduced to improve input quality.
-- Future work:
 
-    - Apply preprocessing techniques and feature fusion across multiple domains to enhance accuracy.
-    - Develop an intelligent CAD system for IDC classification.
-    - Explore advanced CNN models such as DenseNet and CapsuleNet, integrated with diverse feature fusion and selection strategies.
+### 1. Limitations
+- Classification relied only on deep features, without combining them with classical hand-crafted features.
+- No data augmentation methods were applied.
+- No preprocessing steps were introduced to improve input quality.
+
+### 2. Future work:
+- Apply preprocessing techniques and feature fusion across multiple domains to enhance accuracy.
+- Develop an intelligent CAD system for IDC classification.
+- Explore advanced CNN models such as DenseNet and CapsuleNet, integrated with diverse feature fusion and selection strategies.
 
 ## Citation
 If you use this repository, please cite:
