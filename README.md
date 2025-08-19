@@ -1,4 +1,4 @@
-# Selection-Based Cancer Detection from Histopathology Images
+# Selection-Based Histopathology Cancer Detection
 
 ## Introduction
 Breast cancer remains one of the most common and deadly cancers worldwide. Histopathology images are critical for early detection and diagnosis. However, manual inspection is subjective and time-consuming.
@@ -24,12 +24,10 @@ In this work, we present a framework that combines deep learning with feature se
 ---
 
 ## Proposed Methodology
-
 ### Step 1: Deep CNN Training
 - Pretrained CNN model on CIFAR-100 (60,000 images, 100 classes).
 - Fine-tuned on histopathology dataset.
 - Training details:
-
     - Epochs: 60
     - Batch size: 128
     - Initial learning rate: 0.01
