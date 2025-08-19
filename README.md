@@ -95,7 +95,7 @@ pip install -r requirements.txt
 ## Limitations & Future Work
 
 ### 1. Limitations
-- Classification relied only on deep features, without combining them with classical hand-crafted features.
+- Classification relied only on deep features, without combining them with traditional features.
 - No data augmentation methods were applied.
 - No preprocessing steps were introduced to improve input quality.
 
